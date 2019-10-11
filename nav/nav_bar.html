@@ -1,0 +1,194 @@
+<!Doctype html>
+<html>
+<head>
+<title>MY css site</title>
+<link rel="stylesheet" href="nav_style.css">
+</head>
+
+<body>
+<nav>       <!--like p,list tag-->
+
+<ul class="top" id="dropclick">
+<li ><a class="active" href="#home">&#127969;Home</a></li>
+<li><a href="#news">	&#128478;News	</a></li>
+<li><a href="#contact">&#128241;Contact	</a> </li>
+<li><a href="#about">	About</a></li>
+<li class="top-right"><a href="#sign up">Sign up </a></li>
+<li class="top-right"><a href="#sign in">Sign in</a></li>
+
+
+<li class="dropicon" ><a href="javascript:void(0);" onclick="dropMenu()" >&#9776;</a></li>
+</ul>  <br>
+
+</nav>
+
+
+<div class="marq">      <marquee behavior="alternate" width="100%" height="20px" scrollamount="5"  onmouseover="this.stop()"  onmouseout="this.start()">
+------ Module Practice -----</marquee>
+</div>
+
+
+
+
+<!-- form div-->
+
+<div class="container" >
+
+<div >
+<h1 class="headedit">  I am Heading
+</h1>   
+</div>
+
+
+<form class="formedit">
+<div>
+<legend style="width:40%;">
+<fieldset>
+<h2 class="formtxt">Username</h2>
+<input type="text" placeholder="username"  name="username" required >
+
+
+<h2  class="formtxt">Password</h2>
+<input type="text"  placeholder="password"  name="password" required>
+
+<h2 > <input type="submit">
+</h2> 
+
+
+</fieldset>
+</legend>
+
+
+<div class="frame">   <iframe width="500" height="300" 
+
+src="a.jpg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+
+</div>  
+</form>
+
+</div>
+<br><br>
+
+<!-- middle part     -->
+
+<table>
+<tr>
+
+<div class="3-boxes">
+<th class="box1">  
+<img src="a1.jpg" width="80px">
+<div>  <label>Block 1</label>
+</div>
+<p>qwerty uiop asdfg ghjkl mnbvc zaq cde . qwwerrtt dcfrswas cndjnnjirnim.qwerty uiop asdfg ghjkl mnbvc zaq cde . qwwerrtt dcfrswas cndjnnjirnimqwerty uiop asdfg ghjkl mnbvc zaq cde . qwwerrtt dcfrswas cndjnnjirnim</p>
+
+</th>
+
+
+<th class="box2">
+<img src="a1.jpg" width="80px">
+<div>  <label>Block 2</label>
+</div>
+<p>qwerty uiop asdfg ghjkl mnbvc zaq cde . qwwerrtt dcfrswas cndjnnjirnim.qwerty uiop asdfg ghjkl mnbvc zaq cde . qwwerrtt dcfrswas cndjnnjirnimqwerty uiop asdfg ghjkl mnbvc zaq cde . qwwerrtt dcfrswas cndjnnjirnim</p>
+
+</th>
+
+<th class="box3">
+<img src="a1.jpg" width="80px">
+<div>  <label>Block 3</label>
+</div>
+<p>qwerty uiop asdfg ghjkl mnbvc zaq cde . qwwerrtt dcfrswas cndjnnjirnim.qwerty uiop asdfg ghjkl mnbvc zaq cde . qwwerrtt dcfrswas cndjnnjirnimqwerty uiop asdfg ghjkl mnbvc zaq cde . qwwerrtt dcfrswas cndjnnjirnim</p>
+
+</th>
+
+</div> 
+</tr>
+</table><br>
+<div>  <button class="buttonedit" id="buttontxt">Click here</button></div><br>
+
+<!-- footer     -->
+<footer class="footedit">
+<div class="row">
+<div class="col-3">
+<h1>Company</h1>
+<ul>
+<li>About</li>
+<li>Blogs</li> <li>Career</li>
+</ul>
+
+</div>
+<div class="col-3">
+<h1>Products</h1>
+<ul>
+<li>About</li>
+<li>Blogs</li> <li>Career</li>
+</ul>
+
+</div>
+
+<div class="col-3">
+<h1>Learn More</h1>
+<ul>
+<li>About</li>
+<li>Blogs</li> <li>Career</li>
+</ul>
+
+</div>
+
+<div class="col-3">
+<h1>Support</h1>
+<ul>
+<li>About</li>
+<li>Blogs</li> <li>Career</li>
+</ul>
+
+</div>
+
+
+
+
+</div>
+
+</footer>      
+
+
+
+
+<script>
+
+function dropMenu(){
+var x=document.getElementById("dropclick");
+if(x.className === "top"){
+x.className += " responsive";
+/* change top to top.responsive  */
+
+}
+else{
+x.className="top";
+
+}
+}
+
+
+
+
+
+
+</script> 
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

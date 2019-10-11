@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="formvalid_sr.js"></script>
+	<link rel="stylesheet" href="formprac.css">
+</head>
+<body>
+<h1>Registration form</h1>
+<div>
+<form  onsubmit="return checkForm(this);" 
+      method="post">
+<table cellspacing="5">
+<tr>
+<td>Username: </td><td><input type="text" name="username">&nbsp;<span id="i1"></span></td>
+</tr>
+<tr>
+<td>Password: </td><td><input type="password" name="pwd1">&nbsp;<span id="i2"></span></td>
+</tr>
+<tr>
+<td>
+Confirm Password: </td><td><input type="password" name="pwd2">&nbsp;<span id="i3"></span></td>
+</tr>
+<tr>
+<td>
+<!--Email: </td><td><input type="email" name="email">&nbsp;<span id="i4">-->
+    Email: </td><td><input type="text" name="email">&nbsp;<span id="i4"></span></td>
+</tr>
+<tr>
+<td>
+Mobile no: </td><td><input type="text" name="mobile">&nbsp;<span id="i5"></span></td>
+</tr>
+<tr>
+<td><input colspan="2" type="submit"></td></tr>
+</table>
+
+    </form>
+    </div>
+    </body>
+</html>
