@@ -1,0 +1,20 @@
+
+.nav-tabs .nav-link.active 
+{
+	background-color: #333!important;
+	border-color: #333!important;
+}
+.nav-link
+{
+	cursor: pointer!important;
+	border-radius: 0px!important;
+}
+.nav-link:hover
+{
+	border-color: #333!important;
+}
+.nav
+{
+	border-color: #333!important;
+	overflow: hidden!important;
+}
