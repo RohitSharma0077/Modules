@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parallax</title>
+	<style type="text/css">
+body
+	{
+	/*background: linear-gradient(to right,darkorange,white);        /* #e2f0f1    #2aa1af*/
+	/*background-image:url('img/a1.jpg');*/
+	
+	background-attachment: fixed;
+	background-size:cover;
+	background-position: center;
+	/*filter:blur(7px);*/
+	/*opacity: .8;*/
+
+}
+
+.bg{
+     overflow: hidden;
+	width: 100%;
+	height: 100%;
+	/*padding: 100%;*/
+	background-image:url('gif2.gif');
+	background-size:cover;
+	background-position: center;
+	filter:blur(7px);
+	opacity: .6;
+	z-index: -1;
+	position: fixed;
+
+}
+
+.bg1{
+     overflow: hidden;
+	width: 100%;
+	height: 85%;
+	/*padding: 100%;*/
+	background-image:url('gif3.gif');
+	background-size:cover;
+	background-position: center;
+	filter:blur(7px);
+	opacity: .6;
+	z-index: -1;
+	position: fixed;
+
+}
+
+.bg2{
+     overflow: hidden;
+	width: 100%;
+	height: 85%;
+	/*padding: 100%;*/
+	background-image:url('gif1.gif');
+	background-size:cover;
+	background-position: center;
+	filter:blur(7px);
+	opacity: .6;
+	z-index: -1;
+	position: fixed;
+
+}
+
+		.container{
+             z-index: 2;
+			max-width: 1300px;
+			margin: 0 auto;
+			background:transparent;
+			font-size:24px;
+			padding: 25px;
+			/*background:url('gif2.gif');	*/
+
+				
+		}
+
+		
+
+		.parallax{
+			background:url("gif2.gif");
+			/*background-size: cover;*/
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			height: 500px;
+		}
+
+		.parallax1{
+			background:url("gif3.gif");
+			/*background-size: cover;*/
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			height: 500px;
+		}
+
+		.parallax2{
+			background:url("gif1.gif");
+			/*background-size: cover;*/
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			height: 500px;
+		}
+
+		
+#fill{
+	color:white;
+	
+	background-color: #ff8357;
+     border-radius: 20px;
+     padding: 30px;
+     box-shadow: 12px 12px 5px grey;
+     position: fixed;
+     /*z-index: -1;*/
+
+}
+
+
+.vidclip{
+position:relative;             /*   by default relative*/
+margin-left:87%;                        /* fixed never effect anyone it is visible on another*/
+margin-top: -1%; 
+/*background-color: lightgreen;*/
+background:rgba(255,255,255,.5);
+box-shadow: 0 5px 15px rgba(0,0,0,.5);
+border:5px double black;
+border-radius: 15px;
+padding: 0px;
+/*box-shadow: 10px 10px 5px grey;*/
+animation-name: example;
+ animation-duration: 1s;
+ position: absolute;  
+  animation-delay: 0s;  
+  /* animation-delay: -3s;     */      
+    animation-iteration-count: 1;    /* use infine also */ 
+
+}
+ 
+@keyframes example {
+  0%   {background-color: lightgreen; right:0px; left:30%;}
+  100% {background-color: lightgreen; right:0px; left:4%;}
+}
+
+
+.vidclip1{
+position:relative;             /*   by default relative*/
+margin-left:87%;                        /* fixed never effect anyone it is visible on another*/
+margin-top: -1%; 
+/*background-color: lightgreen;*/
+background:rgba(255,255,255,.5);
+box-shadow: 0 5px 15px rgba(0,0,0,.5);
+border:5px double black;
+border-radius: 15px;
+padding: 0px;
+/*box-shadow: 10px 10px 5px grey;*/
+
+animation-name: example;
+ animation-duration: 1s;
+ position: absolute;  
+  animation-delay: 0s;  
+  /* animation-delay: -3s;     */      
+    animation-iteration-count: 1;    /* use infine also */ 
+
+}
+.vidclip2{
+position:relative;             /*   by default relative*/
+margin-left:87%;                        /* fixed never effect anyone it is visible on another*/
+margin-top: -1%; 
+/*background-color: lightgreen;*/
+background:rgba(255,255,255,.5);
+box-shadow: 0 5px 15px rgba(0,0,0,.5);
+border:5px double black;
+border-radius: 15px;
+padding: 0px;
+/*box-shadow: 10px 10px 5px grey;*/
+
+animation-name: example;
+ animation-duration: 1s;
+ position: absolute;  
+  animation-delay: 0s;  
+  /* animation-delay: -3s;     */      
+    animation-iteration-count: 1;    /* use infine also */ 
+
+}
+
+.p{
+position: relative;
+	margin-left: 81%;
+	margin-top: 0 auto;
+    transform:translate(-50%,30%);
+    border:5px groove lightgreen;
+    padding: 10px;
+       width: 40%;
+       height: 250px;
+       overflow: scroll;
+}
+}
+
+</style>
+</head>
+<body>
+
+<center>
+<h2><div id="fill">Parralax Project</div></h2>
+</center>
+
+
+<div class="bg"></div>
+
+
+<div class="container">
+<!-- <h1>Pic 1</h1> -->
+
+<!-- <img src="gif2.gif"> -->
+
+	<div class="parallax">
+	
+<h2 ><span style="size: 15px; background-color: lightgreen" class="vidclip">Playing Guitar</span></h2><div class="p">
+
+
+	It's time to go big with the Redmi Note 7 Pro's 16-cm (6.3) FHD+ Dot Notch display. Powered by a 2.0 GHz Qualcomm Snapdragon 675 processor and 4 GB of RAM, this smartphone lets you experience the next level of performance and control. With a (48 MP + 5 MP) dual-rear camera, a 13 MP front camera, and features such as Face Unlock and 4K Video Recording, the Redmi Note 7 Pro truly puts a new spin on your smartphone experience.<br>Whether it’s work or 
+</div>
+	</div>	
+
+
+
+	
+<div class="parallax1">
+
+<h2 ><span style="size: 15px; background-color: lightgreen" class="vidclip1">Living Room</span></h2>
+<div class="p">
+<!-- <div class="bg1">.</div> -->
+	It's time to go big with the Redmi Note 7 Pro's 16-cm (6.3) FHD+ Dot Notch display. Powered by a 2.0 GHz Qualcomm Snapdragon 675 processor and 4 GB of RAM, this smartphone lets you experience the next level of performance and control. With a (48 MP + 5 MP) dual-rear camera, a 13 MP front camera, and features such as Face Unlock and 4K Video Recording, the Redmi Note 7 Pro truly puts a new spin on your smartphone experience.<br>Whether it’s work or 
+</div>
+
+
+
+	</div>
+	
+<div class="parallax2">
+
+
+<h2 ><span style="size: 15px; background-color: lightgreen" class="vidclip2"> Hey,Hi ! </span></h2>
+<div class="p">
+<!-- <div class="bg">.</div> -->
+	It's time to go big with the Redmi Note 7 Pro's 16-cm (6.3) FHD+ Dot Notch display. Powered by a 2.0 GHz Qualcomm Snapdragon 675 processor and 4 GB of RAM, this smartphone lets you experience the next level of performance and control. With a (48 MP + 5 MP) dual-rear camera, a 13 MP front camera, and features such as Face Unlock and 4K Video Recording, the Redmi Note 7 Pro truly puts a new spin on your smartphone experience.<br>Whether it’s work or 
+</div>
+	</div>
+
+
+
+
+
+</div>
+
+
+
+</body>
+</html>

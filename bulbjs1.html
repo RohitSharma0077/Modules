@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<style type="text/css">
+		html{
+			scroll-behavior: smooth!important;
+		}
+		button{
+
+			background: rgba(0,0,255,.5);
+			font-size:19px;
+			font-weight: bold;
+			display: inline-block;
+
+
+			border-radius: 20px;
+			padding: 8px;
+
+		}
+		button:hover{
+			background: orange;
+
+			color: white;
+			font-size:19px;
+			font-weight: bold;
+			display: inline-block;
+
+
+			border-radius: 20px;
+			padding: 8px;
+			box-shadow: 12px 12px 5px grey;
+			transform: rotate(10deg);
+			transition: transform 300ms ease-in-out;
+			margin-bottom:0% 0% ;
+		}
+
+		h1{
+			margin-top:1%;
+		}
+
+		#img{
+			height:200px; 
+			width: 10%;
+		}
+
+
+
+
+	</style>
+</head>
+<body>
+
+	<select id="jsp" onchange="change()">
+		<option value="red">red</option>
+		<option value="black">black</option>
+		<option value="green">green</option>
+
+	</select>
+	<br><br><br>
+
+
+
+	<button id="jsid" onmouseover="mouseover()" onmouseout="mouseout()" >Hover me </button>
+
+	<br><br><hr>
+	<img src="off.jpg" id="img">
+	<br>
+	<button onclick="on()" id="on" class="btn">Turn on</button>
+	<button onclick="off()" id="off" class="btn">Turn off</button>
+
+
+	<hr>
+	<h1 >Heading</h1>
+	<center><div style="height:400px; width: 50%; border: 1px solid red; " id="box">
+
+		jnjvnkvndkvdj
+	</div></center>
+</body>
+
+<script type="text/javascript">
+
+// document.write("<h1>Js msg</h1>")
+function mouseover()
+{
+	document.getElementById('jsid').innerHTML="changed";
+}
+function mouseout()
+{
+	document.getElementById('jsid').innerHTML="Hover me";
+}
+
+var slt= document.getElementById('jsp');
+var box= document.getElementById('box');
+
+function change()
+{
+
+	box.style.background=slt.value;
+
+}
+
+
+function on()
+{
+	document.getElementById('img').src="on.jpg";
+}
+
+function off()
+{
+	document.getElementById('img').src="off.jpg";
+}
+
+</script>
+</html>
